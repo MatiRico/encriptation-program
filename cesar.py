@@ -57,12 +57,9 @@ def Encode(word, k1):
         # transforma en index el valor coded para buscarlo en el diccionario
         coded_letter = str(list_of_key[position])
         # busca la key segun position, osea, el index de coded
-        word_replaced = word.replace(letter, coded_letter)
         # reemplazo de las letras
-        # el problema actual es que imprime la palabra con una sola letra cambiada, y asi hasta cambiar cada
-        # una de las letras de la palabra. El problema es la impresion de la palabra. Recursion para que
-        # imprima toda la palabra cambiada, quizas un while.
-        print(word_replaced)
+        word_replaced = "".join(coded_letter)
+        print(word_replaced, end="")
 
 
 # def Encode(letter, k1):
